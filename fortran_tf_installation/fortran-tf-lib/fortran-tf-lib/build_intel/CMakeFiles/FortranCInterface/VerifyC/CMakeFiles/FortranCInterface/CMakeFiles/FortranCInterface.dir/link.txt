@@ -1,0 +1,1 @@
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gfortran -O3 -DNDEBUG -O3 CMakeFiles/FortranCInterface.dir/main.F.o CMakeFiles/FortranCInterface.dir/call_sub.f.o CMakeFiles/FortranCInterface.dir/call_mod.f90.o -o FortranCInterface  libsymbols.a libmyfort.a 

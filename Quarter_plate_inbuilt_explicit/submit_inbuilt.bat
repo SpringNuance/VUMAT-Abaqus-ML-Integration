@@ -1,0 +1,1 @@
+abaqus job=Quarter_plate_inbuilt_explicit double=both output_precision=full

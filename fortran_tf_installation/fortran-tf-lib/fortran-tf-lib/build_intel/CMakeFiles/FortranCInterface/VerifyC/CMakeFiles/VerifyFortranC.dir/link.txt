@@ -1,0 +1,1 @@
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gcc -O3 -DNDEBUG CMakeFiles/VerifyFortranC.dir/main.c.o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -o VerifyFortranC  libVerifyFortran.a -lgfortran -lm -lquadmath -lm 

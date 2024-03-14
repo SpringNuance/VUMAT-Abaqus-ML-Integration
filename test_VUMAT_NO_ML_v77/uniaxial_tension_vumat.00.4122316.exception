@@ -1,0 +1,54 @@
+<Description>
+   ABAQUS/Pre exited with exception 300: SMABasAssertException
+
+</Description>
+
+<Details>
+   Assertion Failure: i >= 0 && i < nrows
+</Details>
+
+<Context>
+   PRE
+</Context>
+
+<Phase>
+   pre | Flattener | flatten-flatten
+</Phase>
+
+
+<Memory>
+   <Current>            1 GB </Current>
+   <Resident>           0 GB </Resident>
+   <Physical>         188 GB </Physical>
+   <Limit>            120 GB </Limit>
+   <Accessible>       188 GB </Accessible>
+   <Available>        180 GB </Available>
+   <Allocator>            DL </Allocator>
+   <HugePages>        always </HugePages>
+</Memory>
+
+<Swap>
+       <Size>           0 GB </Size>
+       <Used>           0 GB </Used>
+       <Free>           0 GB </Free>
+</Swap>
+
+<Directories>
+  <current> /tmp/nguyenb5/19893193/nguyenb5_uniaxial_tension_vumat_4122292 </current> <free>      0 GB </free>   <used>      0 GB </used> 
+    <indir> /scratch/project_2004956/test_VUMAT_CSC </indir>   <free>    444 GB </free>  
+   <outdir> /scratch/project_2004956/test_VUMAT_CSC </outdir>  <free>    444 GB </free> 
+   <tmpdir> /tmp/nguyenb5/19893193/nguyenb5_uniaxial_tension_vumat_4122292 </tmpdir>  <free>      0 GB </free> 
+</Directories>
+
+<Installation>
+     <Version> 2023 6.23-1 </Version>
+       <Build> 2022_09_28-21.11.55 183150 </Build>
+  <Executable> /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/pre </Executable>
+</Installation>
+
+<Callstack>
+   1) libABQSMAPreCore.so        0x002158f4 ! cow_List<shr_ContactPairData*>::RaiseOutOfRange ??:?
+   2) pre                        0x0043094c ! ABQmain          ??:?
+   3) pre                        0x0042c723 ! main             ??:?
+</Callstack>
+

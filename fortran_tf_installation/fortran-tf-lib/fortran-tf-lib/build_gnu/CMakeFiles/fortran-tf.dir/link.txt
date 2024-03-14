@@ -1,0 +1,1 @@
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gfortran -fPIC -O3 -DNDEBUG -O3 -shared -Wl,-soname,libfortran-tf.so.0.1 -o libfortran-tf.so.0.1 CMakeFiles/fortran-tf.dir/src/fortran_tensorflow_lib.F90.o  -Wl,-rpath,/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow/lib: ../tensorflow/lib/libtensorflow.so ../tensorflow/lib/libtensorflow_framework.so 

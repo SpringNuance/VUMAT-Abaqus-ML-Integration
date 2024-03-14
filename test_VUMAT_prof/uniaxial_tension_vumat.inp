@@ -1,0 +1,91 @@
+*Heading
+Uniaxial tension
+*Node
+      1,           1.,           1.,           1.
+      2,           1.,           0.,           1.
+      3,           1.,           1.,           0.
+      4,           1.,           0.,           0.
+      5,           0.,           1.,           1.
+      6,           0.,           0.,           1.
+      7,           0.,           1.,           0.
+      8,           0.,           0.,           0.
+*Element, type=C3D8, ELSET=ESET_ALL
+1, 5, 6, 8, 7, 1, 2, 4, 3
+** Section: Section-1
+*Solid Section, elset=ESET_ALL, controls=EC-1, material=Steel
+1.0
+**  
+*Nset, nset=Top_nodes
+1,3,7,5
+*Nset, nset=Bot_nodes
+8,6,2,4
+*Nset, nset=Left_nodes
+8,6,5,7
+*Nset, nset=Right_nodes
+8,4,3,7
+** 
+** ELEMENT CONTROLS
+** 
+*Section Controls, name=EC-1, hourglass=ENHANCED, kinematicsplit=ORTHOGONAL, distortion control=yes, length ratio=0.1
+1., 1., 1.
+*Amplitude, name=Amp-1
+             0.,              0.,             100.,             0.15
+** 
+** MATERIALS
+** 
+*Material, name=Steel
+*Density
+7.8e-09,
+*elastic
+200E3,0.3
+*plastic
+250,0.0
+450,1.0
+**USER MATERIAL, CONSTANTS=4 
+***200E3 , 0.3 , 250 , 200
+**Depvar
+***2
+*INITIAL CONDITIONS, TYPE=SOLUTION
+ESET_ALL,0.00
+** ----------------------------------------------------------------
+*TIME POINTS, NAME=OUTPUT_TIMES, GENERATE
+0.0,100.0, 1
+** 
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES
+*Dynamic, Explicit
+, 100.
+*Bulk Viscosity
+0.06, 1.2
+** Mass Scaling: Semi-Automatic
+**               Whole Model
+*Variable Mass Scaling, dt=5e-05, type=below min, frequency=2000
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1 Type: Displacement/Rotation
+*Boundary
+Bot_nodes,2,2,0
+Left_nodes,1,1,0
+Right_nodes,3,3,0
+** Name: BC-4 Type: Displacement/Rotation
+*Boundary, TYPE=DISPLACEMENT, amplitude=Amp-1
+Top_nodes, 2, 2, 1
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, number interval=1, time marks=NO
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, TIME POINTS = OUTPUT_TIMES
+*Node Output
+RF, U
+*Element Output, directions=YES
+LE, S
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

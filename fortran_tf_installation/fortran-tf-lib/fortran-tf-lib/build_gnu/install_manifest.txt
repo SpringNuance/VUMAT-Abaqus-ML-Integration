@@ -1,0 +1,6 @@
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/lib64/libfortran-tf.so.0.1
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/lib64/libfortran-tf.so
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/lib64/cmake/FortranTensorFlowConfig.cmake
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/lib64/cmake/FortranTensorFlowConfig-release.cmake
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/include/fortran-tf/tf_interface.mod
+/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_gnu/include/fortran-tf/tf_types.mod

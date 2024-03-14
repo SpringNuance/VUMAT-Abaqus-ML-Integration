@@ -1,0 +1,484 @@
+Processing time = 0 second(s).
+CL: Attempting: 5 tokens of explicit
+CL: Attempting 5 tokens from 1761@license1.csc.fi
+CL: Number of licenses on 1761@license1.csc.fi: 600
+CL: Number of licenses in use on 1761@license1.csc.fi: 0
+CL: Test checkout: 5 "explicit" v62.3
+Analysis initiated from SIMULIA established products
+Abaqus JOB uniaxial_tension_vumat
+Abaqus 2023
+USING MEMORY DOUG-LEA ALLOCATOR
+DriverLM command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/eliT_DriverLM -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML_final3 -explicit -verbose -tmpdir /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991 -lmlog
+DriverLM status: 0
+Umbrella port: r18c37.bullx 36333
+                      Platform: lnx86_64
+             Source extensions: f for f90 F90 c C c\+\+ cpp
+              Object extension: o
+           Shared library name: libexplicitU-D.so
+  User subroutine archive file: libexplicitU-D_static.a
+   Utility shared library file: explicitB-D
+               Threads Library: ABQSMAAbuBasicUtils
+                   DMP Library: ABQMPI_api
+                 MPI Libraries: -lmpiCC
+              MPI Search Paths: -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/lib/linux_amd64
+             MPI Include Paths: -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include
+Begin Compiling Double Precision Abaqus/Explicit User Subroutines
+Mon 08 Jan 2024 09:36:05 PM EET
+Compiling code_binh.f90
+Current directory: /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991
+File to compile: /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991/code_binh.f90
+>>> ifort -V -c -fpp -fPIC -extend-source -DABQ_LNX86_64 -DABQ_FORTRAN -auto -pc64 -align array64byte -prec-div -prec-sqrt -fp-model precise -fimf-arch-consistency=true -mP2OPT_hpo_vec_divbyzero=F -no-fma -fp-speculation=safe -fprotect-parens -fstack-protector-strong -reentrancy threaded -msse3 -axcore-avx2,avx -WB -I. -DDPX -I/appl/soft/eng/simulia/EstProducts/2023 -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/include -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/../SMAUsubs/PublicInterfaces -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include -I/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel/include/fortran-tf -I/scratch/project_2004956/test_VUMAT_ML_final3 -I. -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/include -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/../SMAUsubs/PublicInterfaces -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include code_binh.f90
+ Intel(R) Fortran 2021.6.0-1299
+End Compiling Double Precision Abaqus/Explicit User Subroutines
+Begin Linking Double Precision Abaqus/Explicit User Subroutines
+export.sym: ['-Wl,-u,vcosimulation_']
+export.sym: ['-Wl,-u,vcosimulation0_']
+export.sym: ['-Wl,-u,vdflux_']
+export.sym: ['-Wl,-u,vdisp_']
+export.sym: ['-Wl,-u,vdload_']
+export.sym: ['-Wl,-u,vexternaldb_']
+export.sym: ['-Wl,-u,vfabric_']
+export.sym: ['-Wl,-u,vfric_']
+export.sym: ['-Wl,-u,vfric_coef_']
+export.sym: ['-Wl,-u,vfriction_']
+export.sym: ['-Wl,-u,vhetval_']
+export.sym: ['-Wl,-u,vsdvini_']
+export.sym: ['-Wl,-u,vuamp_']
+export.sym: ['-Wl,-u,vuanisohyper_inv_']
+export.sym: ['-Wl,-u,vuanisohyper_strain_']
+export.sym: ['-Wl,-u,vucharlength_']
+export.sym: ['-Wl,-u,vucreepnetwork_']
+export.sym: ['-Wl,-u,vuel_']
+export.sym: ['-Wl,-u,vueos_']
+export.sym: ['-Wl,-u,vueulgenprop_']
+export.sym: ['-Wl,-u,vuexpan_']
+export.sym: ['-Wl,-u,vufield_']
+export.sym: ['-Wl,-u,vufluidexch_']
+export.sym: ['-Wl,-u,vufluidexcheffarea_']
+export.sym: ['-Wl,-u,vugens_']
+export.sym: ['-Wl,-u,vuhard_']
+export.sym: ['-Wl,-u,vuinflprop_']
+export.sym: ['-Wl,-u,vuinter_']
+export.sym: ['-Wl,-u,vuinter_cza_']
+export.sym: ['-Wl,-u,vuinteraction_']
+export.sym: ['-Wl,-u,vumat_']
+export.sym: ['-Wl,-u,vumatht_']
+export.sym: ['-Wl,-u,vumullins_']
+export.sym: ['-Wl,-u,vuporepress_']
+export.sym: ['-Wl,-u,vusdfld_']
+export.sym: ['-Wl,-u,vusdfld_cza_']
+export.sym: ['-Wl,-u,vusuperelashardmod_']
+export.sym: ['-Wl,-u,vusuperelasplastmod_']
+export.sym: ['-Wl,-u,vutrs_']
+export.sym: ['-Wl,-u,vutrsnetwork_']
+export.sym: ['-Wl,-u,vuviscosity_']
+export.sym: ['-Wl,-u,vwave_']
+export.sym: ['-Wl,-u,_Z19SMAUXpU_XP_finalizeRi']
+export.sym: ['-Wl,-u,_Z21SMAUXpU_XP_initializeRi']
+export.sym: ['-Wl,-u,_Z23SMAUXpUsubs_XP_finalizeRi']
+export.sym: ['-Wl,-u,_Z25SMAUXpUsubs_XP_initializeRi']
+export.sym: ['-Wl,-u,_Z32SMAUXpUsubs_XP_specific_finalizeRi']
+export.sym: ['-Wl,-u,_Z34SMAUXpUsubs_XP_specific_initializeRi']
+export.sym: ['-Wl,-u,xplu_callallutils_']
+Linking code_binh.o into user subroutine shared library libexplicitU-D.so
+>>> ifort -V -cxxlib -fPIC -threads -shared -Wl,--add-needed -Wl,-u,vcosimulation_ -Wl,-u,vcosimulation0_ -Wl,-u,vdflux_ -Wl,-u,vdisp_ -Wl,-u,vdload_ -Wl,-u,vexternaldb_ -Wl,-u,vfabric_ -Wl,-u,vfric_ -Wl,-u,vfric_coef_ -Wl,-u,vfriction_ -Wl,-u,vhetval_ -Wl,-u,vsdvini_ -Wl,-u,vuamp_ -Wl,-u,vuanisohyper_inv_ -Wl,-u,vuanisohyper_strain_ -Wl,-u,vucharlength_ -Wl,-u,vucreepnetwork_ -Wl,-u,vuel_ -Wl,-u,vueos_ -Wl,-u,vueulgenprop_ -Wl,-u,vuexpan_ -Wl,-u,vufield_ -Wl,-u,vufluidexch_ -Wl,-u,vufluidexcheffarea_ -Wl,-u,vugens_ -Wl,-u,vuhard_ -Wl,-u,vuinflprop_ -Wl,-u,vuinter_ -Wl,-u,vuinter_cza_ -Wl,-u,vuinteraction_ -Wl,-u,vumat_ -Wl,-u,vumatht_ -Wl,-u,vumullins_ -Wl,-u,vuporepress_ -Wl,-u,vusdfld_ -Wl,-u,vusdfld_cza_ -Wl,-u,vusuperelashardmod_ -Wl,-u,vusuperelasplastmod_ -Wl,-u,vutrs_ -Wl,-u,vutrsnetwork_ -Wl,-u,vuviscosity_ -Wl,-u,vwave_ -Wl,-u,_Z19SMAUXpU_XP_finalizeRi -Wl,-u,_Z21SMAUXpU_XP_initializeRi -Wl,-u,_Z23SMAUXpUsubs_XP_finalizeRi -Wl,-u,_Z25SMAUXpUsubs_XP_initializeRi -Wl,-u,_Z32SMAUXpUsubs_XP_specific_finalizeRi -Wl,-u,_Z34SMAUXpUsubs_XP_specific_initializeRi -Wl,-u,xplu_callallutils_ -Wl,-soname,libexplicitU-D.so -L/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow/lib -L/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel/lib64 -lfortran-tf /scratch/project_2004956/test_VUMAT_ML_final3/ml_module.o -o libexplicitU-D.so code_binh.o /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/lib/libexplicitU-D_static.a -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin -lABQSMAShaShared-D -lABQSMAAncAdbModule -lABQSMAAspSupport -lABQSMAUsubsLib -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/lib/linux_amd64 -lABQDMP_Core -lABQMPI_api -lmpiCC -lABQSMAAbuBasicUtils -lexplicitB-D -lABQSMABasCoreUtils -lABQSMAEliLicenseModule -parallel -Wl,-Bdynamic -shared-intel
+GNU ld (GNU Binutils) 2.38
+End Linking Double Precision Abaqus/Explicit User Subroutines
+Mon 08 Jan 2024 09:36:26 PM EET
+Begin Analysis Input File Processor
+Mon 08 Jan 2024 09:36:26 PM EET
+Run pre
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/pre -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML_final3 -outdir /scratch/project_2004956/test_VUMAT_ML_final3 -tmpdir /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991 -inputFormat inp -resultsFormat odb -output_precision FULL -memory 64 -memory_parameter AUTOMATIC -sim /scratch/project_2004956/test_VUMAT_ML_final3/uniaxial_tension_vumat.sim -simwrk /scratch/project_2004956/test_VUMAT_ML_final3/uniaxial_tension_vumat -input uniaxial_tension_vumat -mp_mode THREADS -odb_output_requested -convert_sdi -umbrella_host r18c37.bullx -umbrella_port 36333 -dmp_solver -std_parallel -timeout 36000 -auto_calc_analysis 
+Mon 08 Jan 2024 09:37:22 PM EET
+Phase Analysis Input File Processor status 0
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+Mon 08 Jan 2024 09:37:22 PM EET
+PAC_NUM_THREADS VALUE: 1
+Run package_dp
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/package_dp -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML_final3 -outdir /scratch/project_2004956/test_VUMAT_ML_final3 -tmpdir /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991 -inputFormat inp -resultsFormat odb -simwrk /scratch/project_2004956/test_VUMAT_ML_final3/uniaxial_tension_vumat -memory 64 -memory_parameter AUTOMATIC -mp_mode THREADS -lmsuspend -umbrella_host r18c37.bullx -umbrella_port 36333 -interactive 
+ 
+ User subroutine constants
+ 
+ E =    200000.0    
+ xnu =   0.3000000    
+ hard =    250.0000    
+ syield0 =    200.0000    
+ log_PEEQ_min =  -0.6020500    
+ log_PEEQ_max =   -9.000000    
+ log_strain_rate_min =   -1.000000    
+ log_strain_rate_max =   -4.000000    
+ stress_min =    40.00000    
+ stress_max =    570.0000    
+ init_temp_min =    290.0000    
+ init_temp_max =    700.0000    
+ delta_temp_min =   0.0000000E+00
+ delta_temp_max =    12.20000    
+ 
+ Initial values of state dependent variables
+ 
+ initial PEEQ =   0.0000000E+00
+ initial strain rate =   2.0000000E-08
+ initial stress =   0.1000000    
+ initial temperature =   0.0000000E+00
+ 
+
+The double precision Abaqus/Package executable will be used in this analysis.
+
+Abaqus/Explicit 2023                             DATE 08-Jan-2024  TIME 21:37:46
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 3 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+  USER SUBROUTINE VUMAT
+-------------------------------------------------------------------------------
+
+
+***WARNING: A material defined in user subroutine VUMAT must be defined as
+            purely elastic (using the initial elastic modulus) at the
+            beginning of the analysis (stepTime=0). This is an informative
+            message. It does not necessarily indicate that user subroutine
+            VUMAT is incorrectly defined.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass (unscaled) in model = 7.85000E-09
+   Center of mass of model (based on unscaled mass) = ( 5.000000E-01, 5.000000E-01, 5.000000E-01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          3.925000E-09                  7.850000E-09
+      I(YY)          3.925000E-09                  7.850000E-09
+      I(ZZ)          3.925000E-09                  7.850000E-09
+      I(XY)          0.000000E+00                 -1.962500E-09
+      I(YZ)          4.135903E-25                 -1.962500E-09
+      I(ZX)          0.000000E+00                 -1.962500E-09
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state. The stable time increment estimates
+  do not account for mass scaling.
+
+
+   Initial time increment = 1.08460E-07
+
+   Statistics for all elements:
+      Mean = 1.08460E-07
+      Standard deviation = 0.0000
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           1          1       1.084599E-07      1.000000E+00
+
+Mon 08 Jan 2024 09:37:51 PM EET
+Phase Abaqus/Explicit Packager status 0
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+Mon 08 Jan 2024 09:37:51 PM EET
+Run explicit_dp
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/explicit_dp -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML_final3 -outdir /scratch/project_2004956/test_VUMAT_ML_final3 -tmpdir /tmp/nguyenb5/19966521/nguyenb5_uniaxial_tension_vumat_3012991 -inputFormat inp -resultsFormat odb -simwrk /scratch/project_2004956/test_VUMAT_ML_final3/uniaxial_tension_vumat -output_precision FULL -mp_mode THREADS -lmsuspend -umbrella_port 36333 -umbrella_host r18c37.bullx -parallel_odb single -parallel_restartfile single -interactive -timeout 3600 
+ Initialize TensorFlow modules successfully
+ 
+ User subroutine constants
+ 
+ E =    200000.0    
+ xnu =   0.3000000    
+ hard =    250.0000    
+ syield0 =    200.0000    
+ log_PEEQ_min =  -0.6020500    
+ log_PEEQ_max =   -9.000000    
+ log_strain_rate_min =   -1.000000    
+ log_strain_rate_max =   -4.000000    
+ stress_min =    40.00000    
+ stress_max =    570.0000    
+ init_temp_min =    290.0000    
+ init_temp_max =    700.0000    
+ delta_temp_min =   0.0000000E+00
+ delta_temp_max =    12.20000    
+ 
+ Initial values of state dependent variables
+ 
+ initial PEEQ =   0.0000000E+00
+ initial strain rate =   2.0000000E-08
+ initial stress =   0.1000000    
+ initial temperature =   0.0000000E+00
+ 
+
+Abaqus/Explicit 2023                             DATE 08-Jan-2024  TIME 21:38:17
+
+The double precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 363.0 kilobytes.
+  Element by element stable time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+        0  0.000E+00 0.000E+00  00:00:07 5.000E-05           1  9.384E-10  9.384E-10  2.125E+07
+Output Field Frame Number    1, of  101 requested time points, at increment zero
+    20001  1.000E+00 1.000E+00  00:02:58 5.000E-05           1  1.406E-09  9.384E-10  2.126E+07
+Output Field Frame Number   2, of  101 time points, at step time 1.000E+00
+    40001  2.000E+00 2.000E+00  00:05:52 5.000E-05           1  1.405E-09  9.384E-10  2.128E+07
+Output Field Frame Number   3, of  101 time points, at step time 2.000E+00
+    60001  3.000E+00 3.000E+00  00:08:22 5.000E-05           1  1.404E-09  9.384E-10  2.129E+07
+Output Field Frame Number   4, of  101 time points, at step time 3.000E+00
+    80002  4.000E+00 4.000E+00  00:11:09 5.000E-05           1  1.403E-09  9.384E-10  2.130E+07
+Output Field Frame Number   5, of  101 time points, at step time 4.000E+00
+   100002  5.000E+00 5.000E+00  00:13:41 5.000E-05           1  1.401E-09  9.384E-10  2.131E+07
+Output Field Frame Number   6, of  101 time points, at step time 5.000E+00
+   120002  6.000E+00 6.000E+00  00:16:25 5.000E-05           1  1.400E-09  9.384E-10  2.133E+07
+Output Field Frame Number   7, of  101 time points, at step time 6.000E+00
+   140003  7.000E+00 7.000E+00  00:19:15 5.000E-05           1  1.399E-09  9.384E-10  2.134E+07
+Output Field Frame Number   8, of  101 time points, at step time 7.000E+00
+   160003  8.000E+00 8.000E+00  00:22:02 5.000E-05           1  1.398E-09  9.384E-10  2.135E+07
+Output Field Frame Number   9, of  101 time points, at step time 8.000E+00
+   180003  9.000E+00 9.000E+00  00:24:33 5.000E-05           1  1.396E-09  9.384E-10  2.136E+07
+Output Field Frame Number  10, of  101 time points, at step time 9.000E+00
+   200003  1.000E+01 1.000E+01  00:27:06 5.000E-05           1  1.395E-09  9.384E-10  2.138E+07
+Output Field Frame Number  11, of  101 time points, at step time 1.000E+01
+   220004  1.100E+01 1.100E+01  00:29:35 5.000E-05           1  1.394E-09  9.384E-10  2.139E+07
+Output Field Frame Number  12, of  101 time points, at step time 1.100E+01
+   240004  1.200E+01 1.200E+01  00:32:00 5.000E-05           1  1.393E-09  9.384E-10  2.140E+07
+Output Field Frame Number  13, of  101 time points, at step time 1.200E+01
+   260004  1.300E+01 1.300E+01  00:34:25 5.000E-05           1  1.392E-09  9.384E-10  2.141E+07
+Output Field Frame Number  14, of  101 time points, at step time 1.300E+01
+   280005  1.400E+01 1.400E+01  00:36:52 5.000E-05           1  1.391E-09  9.384E-10  2.143E+07
+Output Field Frame Number  15, of  101 time points, at step time 1.400E+01
+   300005  1.500E+01 1.500E+01  00:39:17 5.000E-05           1  1.389E-09  9.384E-10  2.144E+07
+Output Field Frame Number  16, of  101 time points, at step time 1.500E+01
+   320005  1.600E+01 1.600E+01  00:41:38 5.000E-05           1  1.388E-09  9.384E-10  2.145E+07
+Output Field Frame Number  17, of  101 time points, at step time 1.600E+01
+   340005  1.700E+01 1.700E+01  00:43:59 5.000E-05           1  1.387E-09  9.384E-10  2.146E+07
+Output Field Frame Number  18, of  101 time points, at step time 1.700E+01
+   360006  1.800E+01 1.800E+01  00:46:26 5.000E-05           1  1.386E-09  9.384E-10  2.148E+07
+Output Field Frame Number  19, of  101 time points, at step time 1.800E+01
+   380006  1.900E+01 1.900E+01  00:48:52 5.000E-05           1  1.385E-09  9.384E-10  2.149E+07
+Output Field Frame Number  20, of  101 time points, at step time 1.900E+01
+   400006  2.000E+01 2.000E+01  00:51:19 5.000E-05           1  1.384E-09  9.384E-10  2.150E+07
+Output Field Frame Number  21, of  101 time points, at step time 2.000E+01
+   420007  2.100E+01 2.100E+01  00:53:47 5.000E-05           1  1.383E-09  9.384E-10  2.152E+07
+Output Field Frame Number  22, of  101 time points, at step time 2.100E+01
+   440007  2.200E+01 2.200E+01  00:56:19 5.000E-05           1  1.382E-09  9.384E-10  2.153E+07
+Output Field Frame Number  23, of  101 time points, at step time 2.200E+01
+   460007  2.300E+01 2.300E+01  00:58:41 5.000E-05           1  1.381E-09  9.384E-10  2.154E+07
+Output Field Frame Number  24, of  101 time points, at step time 2.300E+01
+   480008  2.400E+01 2.400E+01  01:01:06 5.000E-05           1  1.380E-09  9.384E-10  2.156E+07
+Output Field Frame Number  25, of  101 time points, at step time 2.400E+01
+   500008  2.500E+01 2.500E+01  01:03:36 5.000E-05           1  1.379E-09  9.384E-10  2.157E+07
+Output Field Frame Number  26, of  101 time points, at step time 2.500E+01
+   520008  2.600E+01 2.600E+01  01:06:02 5.000E-05           1  1.378E-09  9.384E-10  2.158E+07
+Output Field Frame Number  27, of  101 time points, at step time 2.600E+01
+   540009  2.700E+01 2.700E+01  01:08:25 5.000E-05           1  1.377E-09  9.384E-10  2.160E+07
+Output Field Frame Number  28, of  101 time points, at step time 2.700E+01
+   560009  2.800E+01 2.800E+01  01:11:06 5.000E-05           1  1.376E-09  9.384E-10  2.161E+07
+Output Field Frame Number  29, of  101 time points, at step time 2.800E+01
+   580009  2.900E+01 2.900E+01  01:13:23 5.000E-05           1  1.375E-09  9.384E-10  2.162E+07
+Output Field Frame Number  30, of  101 time points, at step time 2.900E+01
+   600009  3.000E+01 3.000E+01  01:15:49 5.000E-05           1  1.374E-09  9.384E-10  2.163E+07
+Output Field Frame Number  31, of  101 time points, at step time 3.000E+01
+   620010  3.100E+01 3.100E+01  01:18:12 5.000E-05           1  1.373E-09  9.384E-10  2.165E+07
+Output Field Frame Number  32, of  101 time points, at step time 3.100E+01
+   640010  3.200E+01 3.200E+01  01:20:39 5.000E-05           1  1.372E-09  9.384E-10  2.166E+07
+Output Field Frame Number  33, of  101 time points, at step time 3.200E+01
+   660010  3.300E+01 3.300E+01  01:23:06 5.000E-05           1  1.371E-09  9.384E-10  2.167E+07
+Output Field Frame Number  34, of  101 time points, at step time 3.300E+01
+   680011  3.400E+01 3.400E+01  01:25:27 5.000E-05           1  1.370E-09  9.384E-10  2.169E+07
+Output Field Frame Number  35, of  101 time points, at step time 3.400E+01
+   700011  3.500E+01 3.500E+01  01:27:48 5.000E-05           1  1.369E-09  9.384E-10  2.170E+07
+Output Field Frame Number  36, of  101 time points, at step time 3.500E+01
+   720011  3.600E+01 3.600E+01  01:30:04 5.000E-05           1  1.368E-09  9.384E-10  2.172E+07
+Output Field Frame Number  37, of  101 time points, at step time 3.600E+01
+   740012  3.700E+01 3.700E+01  01:32:29 5.000E-05           1  1.367E-09  9.384E-10  2.173E+07
+Output Field Frame Number  38, of  101 time points, at step time 3.700E+01
+   760012  3.800E+01 3.800E+01  01:35:10 5.000E-05           1  1.367E-09  9.384E-10  2.174E+07
+Output Field Frame Number  39, of  101 time points, at step time 3.800E+01
+   780012  3.900E+01 3.900E+01  01:37:36 5.000E-05           1  1.366E-09  9.384E-10  2.176E+07
+Output Field Frame Number  40, of  101 time points, at step time 3.900E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+   800013  4.000E+01 4.000E+01  01:39:51 5.000E-05           1  1.365E-09  9.384E-10  2.177E+07
+Output Field Frame Number  41, of  101 time points, at step time 4.000E+01
+   820013  4.100E+01 4.100E+01  01:42:19 5.000E-05           1  1.364E-09  9.384E-10  2.178E+07
+Output Field Frame Number  42, of  101 time points, at step time 4.100E+01
+   840013  4.200E+01 4.200E+01  01:45:01 5.000E-05           1  1.363E-09  9.384E-10  2.180E+07
+Output Field Frame Number  43, of  101 time points, at step time 4.200E+01
+   860013  4.300E+01 4.300E+01  01:47:25 5.000E-05           1  1.362E-09  9.384E-10  2.181E+07
+Output Field Frame Number  44, of  101 time points, at step time 4.300E+01
+   880014  4.400E+01 4.400E+01  01:49:46 5.000E-05           1  1.361E-09  9.384E-10  2.182E+07
+Output Field Frame Number  45, of  101 time points, at step time 4.400E+01
+   900014  4.500E+01 4.500E+01  01:52:14 5.000E-05           1  1.361E-09  9.384E-10  2.184E+07
+Output Field Frame Number  46, of  101 time points, at step time 4.500E+01
+   920014  4.600E+01 4.600E+01  01:54:53 5.000E-05           1  1.360E-09  9.384E-10  2.185E+07
+Output Field Frame Number  47, of  101 time points, at step time 4.600E+01
+   940015  4.700E+01 4.700E+01  01:57:33 5.000E-05           1  1.359E-09  9.384E-10  2.187E+07
+Output Field Frame Number  48, of  101 time points, at step time 4.700E+01
+   960015  4.800E+01 4.800E+01  02:00:13 5.000E-05           1  1.358E-09  9.384E-10  2.188E+07
+Output Field Frame Number  49, of  101 time points, at step time 4.800E+01
+   980015  4.900E+01 4.900E+01  02:03:09 5.000E-05           1  1.357E-09  9.384E-10  2.189E+07
+Output Field Frame Number  50, of  101 time points, at step time 4.900E+01
+  1000016  5.000E+01 5.000E+01  02:05:54 5.000E-05           1  1.357E-09  9.384E-10  2.191E+07
+Output Field Frame Number  51, of  101 time points, at step time 5.000E+01
+  1020016  5.100E+01 5.100E+01  02:08:28 5.000E-05           1  1.356E-09  9.384E-10  2.192E+07
+Output Field Frame Number  52, of  101 time points, at step time 5.100E+01
+  1040016  5.200E+01 5.200E+01  02:11:03 5.000E-05           1  1.355E-09  9.384E-10  2.194E+07
+Output Field Frame Number  53, of  101 time points, at step time 5.200E+01
+  1060017  5.300E+01 5.300E+01  02:13:39 5.000E-05           1  1.354E-09  9.384E-10  2.195E+07
+Output Field Frame Number  54, of  101 time points, at step time 5.300E+01
+  1080017  5.400E+01 5.400E+01  02:16:15 5.000E-05           1  1.354E-09  9.384E-10  2.196E+07
+Output Field Frame Number  55, of  101 time points, at step time 5.400E+01
+  1100017  5.500E+01 5.500E+01  02:18:45 5.000E-05           1  1.353E-09  9.384E-10  2.198E+07
+Output Field Frame Number  56, of  101 time points, at step time 5.500E+01
+  1120018  5.600E+01 5.600E+01  02:21:24 5.000E-05           1  1.352E-09  9.384E-10  2.199E+07
+Output Field Frame Number  57, of  101 time points, at step time 5.600E+01
+  1140018  5.700E+01 5.700E+01  02:24:06 5.000E-05           1  1.352E-09  9.384E-10  2.201E+07
+Output Field Frame Number  58, of  101 time points, at step time 5.700E+01
+  1160018  5.800E+01 5.800E+01  02:26:51 5.000E-05           1  1.351E-09  9.384E-10  2.202E+07
+Output Field Frame Number  59, of  101 time points, at step time 5.800E+01
+  1180019  5.900E+01 5.900E+01  02:29:45 5.000E-05           1  1.350E-09  9.384E-10  2.203E+07
+Output Field Frame Number  60, of  101 time points, at step time 5.900E+01
+  1200019  6.000E+01 6.000E+01  02:32:25 5.000E-05           1  1.349E-09  9.384E-10  2.205E+07
+Output Field Frame Number  61, of  101 time points, at step time 6.000E+01
+  1220019  6.100E+01 6.100E+01  02:35:16 5.000E-05           1  1.349E-09  9.384E-10  2.206E+07
+Output Field Frame Number  62, of  101 time points, at step time 6.100E+01
+  1239408  6.197E+01 6.197E+01  02:42:39 5.000E-05           1  1.348E-09  9.384E-10  2.208E+07
+  1240020  6.200E+01 6.200E+01  02:42:52 5.000E-05           1  1.348E-09  9.384E-10  2.208E+07
+Output Field Frame Number  63, of  101 time points, at step time 6.200E+01
+  1259629  6.298E+01 6.298E+01  02:48:51 5.000E-05           1  1.347E-09  9.384E-10  2.209E+07
+  1260020  6.300E+01 6.300E+01  02:49:03 5.000E-05           1  1.347E-09  9.384E-10  2.209E+07
+Output Field Frame Number  64, of  101 time points, at step time 6.300E+01
+  1278758  6.394E+01 6.394E+01  02:54:12 5.000E-05           1  1.347E-09  9.384E-10  2.210E+07
+  1280020  6.400E+01 6.400E+01  02:54:37 5.000E-05           1  1.347E-09  9.384E-10  2.211E+07
+Output Field Frame Number  65, of  101 time points, at step time 6.400E+01
+  1298699  6.493E+01 6.493E+01  03:02:41 5.000E-05           1  1.346E-09  9.384E-10  2.212E+07
+  1300021  6.500E+01 6.500E+01  03:03:11 5.000E-05           1  1.346E-09  9.384E-10  2.212E+07
+Output Field Frame Number  66, of  101 time points, at step time 6.500E+01
+  1318982  6.595E+01 6.595E+01  03:07:49 5.000E-05           1  1.346E-09  9.384E-10  2.213E+07
+  1320021  6.600E+01 6.600E+01  03:08:01 5.000E-05           1  1.346E-09  9.384E-10  2.213E+07
+Output Field Frame Number  67, of  101 time points, at step time 6.600E+01
+  1340021  6.700E+01 6.700E+01  03:11:45 5.000E-05           1  1.345E-09  9.384E-10  2.215E+07
+Output Field Frame Number  68, of  101 time points, at step time 6.700E+01
+  1358768  6.794E+01 6.794E+01  03:15:24 5.000E-05           1  1.344E-09  9.384E-10  2.216E+07
+  1360021  6.800E+01 6.800E+01  03:15:39 5.000E-05           1  1.344E-09  9.384E-10  2.216E+07
+Output Field Frame Number  69, of  101 time points, at step time 6.800E+01
+  1378696  6.893E+01 6.893E+01  03:18:48 5.000E-05           1  1.344E-09  9.384E-10  2.218E+07
+  1380022  6.900E+01 6.900E+01  03:19:05 5.000E-05           1  1.344E-09  9.384E-10  2.218E+07
+Output Field Frame Number  70, of  101 time points, at step time 6.900E+01
+  1399301  6.996E+01 6.996E+01  03:23:05 5.000E-05           1  1.343E-09  9.384E-10  2.219E+07
+  1400022  7.000E+01 7.000E+01  03:23:14 5.000E-05           1  1.343E-09  9.384E-10  2.219E+07
+Output Field Frame Number  71, of  101 time points, at step time 7.000E+01
+  1420022  7.100E+01 7.100E+01  03:26:38 5.000E-05           1  1.342E-09  9.384E-10  2.221E+07
+Output Field Frame Number  72, of  101 time points, at step time 7.100E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+  1438942  7.195E+01 7.195E+01  03:30:50 5.000E-05           1  1.342E-09  9.384E-10  2.222E+07
+  1440023  7.200E+01 7.200E+01  03:31:04 5.000E-05           1  1.342E-09  9.384E-10  2.222E+07
+Output Field Frame Number  73, of  101 time points, at step time 7.200E+01
+  1458633  7.293E+01 7.293E+01  03:34:33 5.000E-05           1  1.341E-09  9.384E-10  2.223E+07
+  1460023  7.300E+01 7.300E+01  03:34:48 5.000E-05           1  1.341E-09  9.384E-10  2.224E+07
+Output Field Frame Number  74, of  101 time points, at step time 7.300E+01
+  1479199  7.396E+01 7.396E+01  03:38:24 5.000E-05           1  1.341E-09  9.384E-10  2.225E+07
+  1480023  7.400E+01 7.400E+01  03:38:35 5.000E-05           1  1.341E-09  9.384E-10  2.225E+07
+Output Field Frame Number  75, of  101 time points, at step time 7.400E+01
+  1499676  7.498E+01 7.498E+01  03:41:45 5.000E-05           1  1.340E-09  9.384E-10  2.226E+07
+  1500024  7.500E+01 7.500E+01  03:41:49 5.000E-05           1  1.340E-09  9.384E-10  2.227E+07
+Output Field Frame Number  76, of  101 time points, at step time 7.500E+01
+  1519939  7.600E+01 7.600E+01  03:44:32 5.000E-05           1  1.340E-09  9.384E-10  2.228E+07
+  1520024  7.600E+01 7.600E+01  03:44:33 5.000E-05           1  1.340E-09  9.384E-10  2.228E+07
+Output Field Frame Number  77, of  101 time points, at step time 7.600E+01
+  1539050  7.695E+01 7.695E+01  03:47:21 5.000E-05           1  1.339E-09  9.384E-10  2.229E+07
+  1540024  7.700E+01 7.700E+01  03:47:31 5.000E-05           1  1.339E-09  9.384E-10  2.229E+07
+Output Field Frame Number  78, of  101 time points, at step time 7.700E+01
+  1558635  7.793E+01 7.793E+01  03:50:23 5.000E-05           1  1.339E-09  9.384E-10  2.231E+07
+  1560025  7.800E+01 7.800E+01  03:50:34 5.000E-05           1  1.339E-09  9.384E-10  2.231E+07
+Output Field Frame Number  79, of  101 time points, at step time 7.800E+01
+  1580025  7.900E+01 7.900E+01  03:53:14 5.000E-05           1  1.338E-09  9.384E-10  2.232E+07
+Output Field Frame Number  80, of  101 time points, at step time 7.900E+01
+  1600025  8.000E+01 8.000E+01  03:55:49 5.000E-05           1  1.337E-09  9.384E-10  2.234E+07
+Output Field Frame Number  81, of  101 time points, at step time 8.000E+01
+  1620026  8.100E+01 8.100E+01  03:58:19 5.000E-05           1  1.337E-09  9.384E-10  2.235E+07
+Output Field Frame Number  82, of  101 time points, at step time 8.100E+01
+  1640026  8.200E+01 8.200E+01  04:00:43 5.000E-05           1  1.336E-09  9.384E-10  2.237E+07
+Output Field Frame Number  83, of  101 time points, at step time 8.200E+01
+  1660026  8.300E+01 8.300E+01  04:03:18 5.000E-05           1  1.336E-09  9.384E-10  2.238E+07
+Output Field Frame Number  84, of  101 time points, at step time 8.300E+01
+  1680027  8.400E+01 8.400E+01  04:06:01 5.000E-05           1  1.335E-09  9.384E-10  2.240E+07
+Output Field Frame Number  85, of  101 time points, at step time 8.400E+01
+  1700027  8.500E+01 8.500E+01  04:08:19 5.000E-05           1  1.335E-09  9.384E-10  2.241E+07
+Output Field Frame Number  86, of  101 time points, at step time 8.500E+01
+  1720027  8.600E+01 8.600E+01  04:10:47 5.000E-05           1  1.334E-09  9.384E-10  2.243E+07
+Output Field Frame Number  87, of  101 time points, at step time 8.600E+01
+  1740028  8.700E+01 8.700E+01  04:13:12 5.000E-05           1  1.334E-09  9.384E-10  2.244E+07
+Output Field Frame Number  88, of  101 time points, at step time 8.700E+01
+  1760028  8.800E+01 8.800E+01  04:15:31 5.000E-05           1  1.333E-09  9.384E-10  2.246E+07
+Output Field Frame Number  89, of  101 time points, at step time 8.800E+01
+  1780028  8.900E+01 8.900E+01  04:17:53 5.000E-05           1  1.333E-09  9.384E-10  2.247E+07
+Output Field Frame Number  90, of  101 time points, at step time 8.900E+01
+  1800029  9.000E+01 9.000E+01  04:20:25 5.000E-05           1  1.333E-09  9.384E-10  2.249E+07
+Output Field Frame Number  91, of  101 time points, at step time 9.000E+01
+  1820029  9.100E+01 9.100E+01  04:22:46 5.000E-05           1  1.332E-09  9.384E-10  2.250E+07
+Output Field Frame Number  92, of  101 time points, at step time 9.100E+01
+  1840029  9.200E+01 9.200E+01  04:25:09 5.000E-05           1  1.332E-09  9.384E-10  2.252E+07
+Output Field Frame Number  93, of  101 time points, at step time 9.200E+01
+  1860030  9.300E+01 9.300E+01  04:27:36 5.000E-05           1  1.331E-09  9.384E-10  2.253E+07
+Output Field Frame Number  94, of  101 time points, at step time 9.300E+01
+  1880030  9.400E+01 9.400E+01  04:30:00 5.000E-05           1  1.331E-09  9.384E-10  2.255E+07
+Output Field Frame Number  95, of  101 time points, at step time 9.400E+01
+  1900030  9.500E+01 9.500E+01  04:32:52 5.000E-05           1  1.330E-09  9.384E-10  2.256E+07
+Output Field Frame Number  96, of  101 time points, at step time 9.500E+01
+  1920031  9.600E+01 9.600E+01  04:35:22 5.000E-05           1  1.330E-09  9.384E-10  2.258E+07
+Output Field Frame Number  97, of  101 time points, at step time 9.600E+01
+  1940031  9.700E+01 9.700E+01  04:37:46 5.000E-05           1  1.330E-09  9.384E-10  2.259E+07
+Output Field Frame Number  98, of  101 time points, at step time 9.700E+01
+  1960031  9.800E+01 9.800E+01  04:40:13 5.000E-05           1  1.329E-09  9.384E-10  2.261E+07
+Output Field Frame Number  99, of  101 time points, at step time 9.800E+01
+  1980032  9.900E+01 9.900E+01  04:42:39 5.000E-05           1  1.329E-09  9.384E-10  2.262E+07
+Output Field Frame Number 100, of  101 time points, at step time 9.900E+01
+  2000032  1.000E+02 1.000E+02  04:45:09 5.000E-05           1  1.328E-09  9.384E-10  2.264E+07
+Restart Number  1 at 100.00
+Output Field Frame Number 101, of  101 time points, at step time 1.000E+02
+ Cleaning TensorFlow modules successfully
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   11441.
+       SYSTEM TIME (SEC)    =   223.90
+       WALLCLOCK TIME (SEC) =        17130
+              INIT (SEC) =          7
+              MAIN (SEC) =      17123
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+
+Tue 09 Jan 2024 02:24:00 AM EET
+Phase Abaqus/Explicit Analysis status 0
+End Abaqus/Explicit Analysis
+RESULTSFORMAT: ODB
+SIMMODE: SFS
+SIMEXT: .sim
+Abaqus JOB uniaxial_tension_vumat COMPLETED
+Running: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/eliT_CheckLicense
+Arguments: ['-explicit', '-cpus', '1', '-location', '-indir', '/scratch/project_2004956/test_VUMAT_ML_final3', '-job', 'uniaxial_tension_vumat']
+License for explicit is available.

@@ -1,0 +1,308 @@
+Abaqus/Explicit 2023                             DATE 30-Dec-2023  TIME 13:36:57
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 3 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+  USER SUBROUTINE VUMAT
+-------------------------------------------------------------------------------
+
+
+***WARNING: A material defined in user subroutine VUMAT must be defined as
+            purely elastic (using the initial elastic modulus) at the
+            beginning of the analysis (stepTime=0). This is an informative
+            message. It does not necessarily indicate that user subroutine
+            VUMAT is incorrectly defined.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass (unscaled) in model = 7.80000E-09
+   Center of mass of model (based on unscaled mass) = ( 5.000000E-01, 5.000000E-01, 5.000000E-01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          3.900000E-09                  7.800000E-09
+      I(YY)          3.900000E-09                  7.800000E-09
+      I(ZZ)          3.900000E-09                  7.800000E-09
+      I(XY)          0.000000E+00                 -1.950000E-09
+      I(YZ)          0.000000E+00                 -1.950000E-09
+      I(ZX)          0.000000E+00                 -1.950000E-09
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state. The stable time increment estimates
+  do not account for mass scaling.
+
+
+   Initial time increment = 1.08114E-07
+
+   Statistics for all elements:
+      Mean = 1.08114E-07
+      Standard deviation = 0.0000
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           1          1       1.081140E-07      1.000000E+00
+
+
+Abaqus/Explicit 2023                             DATE 30-Dec-2023  TIME 13:37:00
+
+The single precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 879.3 kilobytes.
+  Element by element stable time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+        0  0.000E+00 0.000E+00  00:00:00 5.000E-05           1  9.384E-10  9.384E-10  2.139E+07
+Output Field Frame Number   0, of  100, at step time 0.000E+00
+
+***WARNING: THE ANALYSIS MAY NEED A LARGE NUMBER OF INCREMENTS (MORE THAN
+            300000), AND IT MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE
+            DOUBLE PRECISION EXECUTABLE IS RECOMMENDED.
+
+    19998  1.000E+00 1.000E+00  00:00:01 5.000E-05           1  1.406E-09  9.386E-10  2.140E+07
+Output Field Frame Number   1, of  100, at step time 1.000E+00
+    40019  2.000E+00 2.000E+00  00:00:02 5.000E-05           1  1.405E-09  9.395E-10  2.141E+07
+Output Field Frame Number   2, of  100, at step time 2.000E+00
+    59993  3.000E+00 3.000E+00  00:00:02 5.000E-05           1  1.404E-09  9.552E-10  2.142E+07
+Output Field Frame Number   3, of  100, at step time 3.000E+00
+    79967  4.000E+00 4.000E+00  00:00:03 5.000E-05           1  1.402E-09  9.445E-10  2.144E+07
+Output Field Frame Number   4, of  100, at step time 4.000E+00
+    99941  5.000E+00 5.000E+00  00:00:04 5.000E-05           1  1.401E-09  9.374E-10  2.145E+07
+Output Field Frame Number   5, of  100, at step time 5.000E+00
+   119915  6.000E+00 6.000E+00  00:00:04 5.000E-05           1  1.400E-09  9.430E-10  2.146E+07
+Output Field Frame Number   6, of  100, at step time 6.000E+00
+   139889  7.000E+00 7.000E+00  00:00:05 5.000E-05           1  1.399E-09  1.030E-09  2.147E+07
+Output Field Frame Number   7, of  100, at step time 7.000E+00
+   159863  8.000E+00 8.000E+00  00:00:05 5.000E-05           1  1.398E-09  9.763E-10  2.149E+07
+Output Field Frame Number   8, of  100, at step time 8.000E+00
+   180029  9.000E+00 9.000E+00  00:00:06 5.000E-05           1  1.396E-09  9.293E-10  2.150E+07
+Output Field Frame Number   9, of  100, at step time 9.000E+00
+   200195  1.000E+01 1.000E+01  00:00:07 5.000E-05           1  1.395E-09  9.647E-10  2.151E+07
+Output Field Frame Number  10, of  100, at step time 1.000E+01
+   220361  1.100E+01 1.100E+01  00:00:07 5.000E-05           1  1.394E-09  1.082E-09  2.153E+07
+Output Field Frame Number  11, of  100, at step time 1.100E+01
+   240527  1.200E+01 1.200E+01  00:00:08 5.000E-05           1  1.393E-09  1.281E-09  2.154E+07
+Output Field Frame Number  12, of  100, at step time 1.200E+01
+   260693  1.300E+01 1.300E+01  00:00:09 5.000E-05           1  1.392E-09  1.402E-09  2.155E+07
+Output Field Frame Number  13, of  100, at step time 1.300E+01
+   280859  1.400E+01 1.400E+01  00:00:09 5.000E-05           1  1.391E-09  1.164E-09  2.156E+07
+Output Field Frame Number  14, of  100, at step time 1.400E+01
+
+***WARNING: THE ANALYSIS REACHED A LARGE NUMBER OF INCREMENTS (300000), AND IT
+            MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE DOUBLE PRECISION
+            EXECUTABLE IS RECOMMENDED.
+
+   301025  1.500E+01 1.500E+01  00:00:10 5.000E-05           1  1.389E-09  1.007E-09  2.158E+07
+Output Field Frame Number  15, of  100, at step time 1.500E+01
+   321191  1.600E+01 1.600E+01  00:00:11 5.000E-05           1  1.388E-09  9.300E-10  2.159E+07
+Output Field Frame Number  16, of  100, at step time 1.600E+01
+   341357  1.700E+01 1.700E+01  00:00:11 5.000E-05           1  1.387E-09  9.335E-10  2.160E+07
+Output Field Frame Number  17, of  100, at step time 1.700E+01
+   361523  1.800E+01 1.800E+01  00:00:12 5.000E-05           1  1.386E-09  1.017E-09  2.162E+07
+Output Field Frame Number  18, of  100, at step time 1.800E+01
+   381689  1.900E+01 1.900E+01  00:00:13 5.000E-05           1  1.385E-09  6.730E-10  2.163E+07
+Output Field Frame Number  19, of  100, at step time 1.900E+01
+   401855  2.000E+01 2.000E+01  00:00:13 5.000E-05           1  1.384E-09  3.146E-10  2.164E+07
+Output Field Frame Number  20, of  100, at step time 2.000E+01
+   422021  2.100E+01 2.100E+01  00:00:14 5.000E-05           1  1.383E-09  3.487E-11  2.166E+07
+Output Field Frame Number  21, of  100, at step time 2.100E+01
+   442187  2.200E+01 2.200E+01  00:00:14 5.000E-05           1  1.382E-09 -1.670E-10  2.167E+07
+Output Field Frame Number  22, of  100, at step time 2.200E+01
+   462353  2.300E+01 2.300E+01  00:00:15 5.000E-05           1  1.381E-09 -2.918E-10  2.168E+07
+Output Field Frame Number  23, of  100, at step time 2.300E+01
+   482519  2.400E+01 2.400E+01  00:00:16 5.000E-05           1  1.380E-09 -3.398E-10  2.170E+07
+Output Field Frame Number  24, of  100, at step time 2.400E+01
+   502685  2.500E+01 2.500E+01  00:00:16 5.000E-05           1  1.379E-09 -3.112E-10  2.171E+07
+Output Field Frame Number  25, of  100, at step time 2.500E+01
+   522851  2.600E+01 2.600E+01  00:00:17 5.000E-05           1  1.378E-09 -2.063E-10  2.172E+07
+Output Field Frame Number  26, of  100, at step time 2.600E+01
+   543017  2.700E+01 2.700E+01  00:00:18 5.000E-05           1  1.377E-09 -2.540E-11  2.174E+07
+Output Field Frame Number  27, of  100, at step time 2.700E+01
+   563183  2.800E+01 2.800E+01  00:00:18 5.000E-05           1  1.376E-09  2.314E-10  2.175E+07
+Output Field Frame Number  28, of  100, at step time 2.800E+01
+   583349  2.900E+01 2.900E+01  00:00:19 5.000E-05           1  1.375E-09  5.638E-10  2.176E+07
+Output Field Frame Number  29, of  100, at step time 2.900E+01
+   603515  3.000E+01 3.000E+01  00:00:20 5.000E-05           1  1.374E-09  9.717E-10  2.177E+07
+Output Field Frame Number  30, of  100, at step time 3.000E+01
+   623681  3.100E+01 3.100E+01  00:00:20 5.000E-05           1  1.373E-09  1.454E-09  2.179E+07
+Output Field Frame Number  31, of  100, at step time 3.100E+01
+   643847  3.200E+01 3.200E+01  00:00:21 5.000E-05           1  1.372E-09  2.012E-09  2.180E+07
+Output Field Frame Number  32, of  100, at step time 3.200E+01
+   664013  3.300E+01 3.300E+01  00:00:22 5.000E-05           1  1.371E-09  1.514E-09  2.182E+07
+Output Field Frame Number  33, of  100, at step time 3.300E+01
+   684179  3.400E+01 3.400E+01  00:00:22 5.000E-05           1  1.370E-09  1.021E-09  2.183E+07
+Output Field Frame Number  34, of  100, at step time 3.400E+01
+   704345  3.500E+01 3.500E+01  00:00:23 5.000E-05           1  1.369E-09  6.007E-10  2.184E+07
+Output Field Frame Number  35, of  100, at step time 3.500E+01
+   724511  3.600E+01 3.600E+01  00:00:23 5.000E-05           1  1.368E-09  2.534E-10  2.186E+07
+Output Field Frame Number  36, of  100, at step time 3.600E+01
+   744677  3.700E+01 3.700E+01  00:00:24 5.000E-05           1  1.367E-09 -2.131E-11  2.187E+07
+Output Field Frame Number  37, of  100, at step time 3.700E+01
+   764843  3.800E+01 3.800E+01  00:00:25 5.000E-05           1  1.366E-09  6.098E-10  2.188E+07
+Output Field Frame Number  38, of  100, at step time 3.800E+01
+   785009  3.900E+01 3.900E+01  00:00:25 5.000E-05           1  1.365E-09  1.679E-09  2.190E+07
+Output Field Frame Number  39, of  100, at step time 3.900E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+   805175  4.000E+01 4.000E+01  00:00:26 5.000E-05           1  1.365E-09  2.819E-09  2.191E+07
+Output Field Frame Number  40, of  100, at step time 4.000E+01
+   825341  4.100E+01 4.100E+01  00:00:27 5.000E-05           1  1.364E-09  2.362E-09  2.192E+07
+Output Field Frame Number  41, of  100, at step time 4.100E+01
+   845507  4.200E+01 4.200E+01  00:00:27 5.000E-05           1  1.363E-09  1.248E-09  2.194E+07
+Output Field Frame Number  42, of  100, at step time 4.200E+01
+   865673  4.300E+01 4.300E+01  00:00:28 5.000E-05           1  1.362E-09  2.061E-10  2.195E+07
+Output Field Frame Number  43, of  100, at step time 4.300E+01
+   885839  4.400E+01 4.400E+01  00:00:29 5.000E-05           1  1.361E-09 -7.652E-10  2.197E+07
+Output Field Frame Number  44, of  100, at step time 4.400E+01
+   906005  4.500E+01 4.500E+01  00:00:29 5.000E-05           1  1.360E-09 -1.667E-09  2.198E+07
+Output Field Frame Number  45, of  100, at step time 4.500E+01
+   926171  4.600E+01 4.600E+01  00:00:30 5.000E-05           1  1.360E-09 -2.498E-09  2.199E+07
+Output Field Frame Number  46, of  100, at step time 4.600E+01
+   946337  4.700E+01 4.700E+01  00:00:31 5.000E-05           1  1.359E-09 -3.261E-09  2.201E+07
+Output Field Frame Number  47, of  100, at step time 4.700E+01
+   966503  4.800E+01 4.800E+01  00:00:31 5.000E-05           1  1.358E-09 -3.953E-09  2.202E+07
+Output Field Frame Number  48, of  100, at step time 4.800E+01
+   986669  4.900E+01 4.900E+01  00:00:32 5.000E-05           1  1.357E-09 -4.577E-09  2.204E+07
+Output Field Frame Number  49, of  100, at step time 4.900E+01
+  1006835  5.000E+01 5.000E+01  00:00:33 5.000E-05           1  1.356E-09 -5.132E-09  2.205E+07
+Output Field Frame Number  50, of  100, at step time 5.000E+01
+  1027001  5.100E+01 5.100E+01  00:00:33 5.000E-05           1  1.356E-09 -5.619E-09  2.206E+07
+Output Field Frame Number  51, of  100, at step time 5.100E+01
+  1047167  5.200E+01 5.200E+01  00:00:34 5.000E-05           1  1.355E-09 -6.037E-09  2.208E+07
+Output Field Frame Number  52, of  100, at step time 5.200E+01
+  1067333  5.300E+01 5.300E+01  00:00:34 5.000E-05           1  1.354E-09 -6.387E-09  2.209E+07
+Output Field Frame Number  53, of  100, at step time 5.300E+01
+  1087499  5.400E+01 5.400E+01  00:00:35 5.000E-05           1  1.353E-09 -6.669E-09  2.211E+07
+Output Field Frame Number  54, of  100, at step time 5.400E+01
+  1107665  5.500E+01 5.500E+01  00:00:36 5.000E-05           1  1.353E-09 -6.883E-09  2.212E+07
+Output Field Frame Number  55, of  100, at step time 5.500E+01
+  1127831  5.600E+01 5.600E+01  00:00:36 5.000E-05           1  1.352E-09 -7.030E-09  2.213E+07
+Output Field Frame Number  56, of  100, at step time 5.600E+01
+  1147997  5.700E+01 5.700E+01  00:00:37 5.000E-05           1  1.351E-09 -7.109E-09  2.215E+07
+Output Field Frame Number  57, of  100, at step time 5.700E+01
+  1168163  5.800E+01 5.800E+01  00:00:38 5.000E-05           1  1.351E-09 -7.122E-09  2.216E+07
+Output Field Frame Number  58, of  100, at step time 5.800E+01
+  1188329  5.900E+01 5.900E+01  00:00:38 5.000E-05           1  1.350E-09 -7.067E-09  2.218E+07
+Output Field Frame Number  59, of  100, at step time 5.900E+01
+  1208495  6.000E+01 6.000E+01  00:00:39 5.000E-05           1  1.349E-09 -6.946E-09  2.219E+07
+Output Field Frame Number  60, of  100, at step time 6.000E+01
+  1228661  6.100E+01 6.100E+01  00:00:40 5.000E-05           1  1.348E-09 -6.758E-09  2.221E+07
+Output Field Frame Number  61, of  100, at step time 6.100E+01
+  1248827  6.200E+01 6.200E+01  00:00:40 5.000E-05           1  1.348E-09 -6.505E-09  2.222E+07
+Output Field Frame Number  62, of  100, at step time 6.200E+01
+  1268993  6.300E+01 6.300E+01  00:00:41 5.000E-05           1  1.347E-09 -6.185E-09  2.223E+07
+Output Field Frame Number  63, of  100, at step time 6.300E+01
+  1289159  6.400E+01 6.400E+01  00:00:42 5.000E-05           1  1.346E-09 -5.799E-09  2.225E+07
+Output Field Frame Number  64, of  100, at step time 6.400E+01
+  1307887  6.500E+01 6.500E+01  00:00:42 5.000E-05           1  1.346E-09 -5.382E-09  2.226E+07
+Output Field Frame Number  65, of  100, at step time 6.500E+01
+  1326617  6.600E+01 6.600E+01  00:00:43 5.000E-05           1  1.345E-09 -4.909E-09  2.228E+07
+Output Field Frame Number  66, of  100, at step time 6.600E+01
+  1345347  6.700E+01 6.700E+01  00:00:43 5.000E-05           1  1.345E-09 -4.382E-09  2.229E+07
+Output Field Frame Number  67, of  100, at step time 6.700E+01
+  1364077  6.800E+01 6.800E+01  00:00:44 5.000E-05           1  1.344E-09 -3.800E-09  2.230E+07
+Output Field Frame Number  68, of  100, at step time 6.800E+01
+  1382807  6.900E+01 6.900E+01  00:00:45 5.000E-05           1  1.344E-09 -3.164E-09  2.232E+07
+Output Field Frame Number  69, of  100, at step time 6.900E+01
+  1401537  7.000E+01 7.000E+01  00:00:45 5.000E-05           1  1.343E-09 -2.474E-09  2.233E+07
+Output Field Frame Number  70, of  100, at step time 7.000E+01
+  1420267  7.100E+01 7.100E+01  00:00:46 5.000E-05           1  1.342E-09 -1.729E-09  2.234E+07
+Output Field Frame Number  71, of  100, at step time 7.100E+01
+  1438997  7.200E+01 7.200E+01  00:00:46 5.000E-05           1  1.342E-09 -9.306E-10  2.236E+07
+Output Field Frame Number  72, of  100, at step time 7.200E+01
+  1457727  7.300E+01 7.300E+01  00:00:47 5.000E-05           1  1.341E-09 -7.841E-11  2.237E+07
+Output Field Frame Number  73, of  100, at step time 7.300E+01
+  1476457  7.400E+01 7.400E+01  00:00:48 5.000E-05           1  1.341E-09  8.275E-10  2.238E+07
+Output Field Frame Number  74, of  100, at step time 7.400E+01
+  1495187  7.500E+01 7.500E+01  00:00:48 5.000E-05           1  1.340E-09  1.787E-09  2.240E+07
+Output Field Frame Number  75, of  100, at step time 7.500E+01
+  1513917  7.600E+01 7.600E+01  00:00:49 5.000E-05           1  1.340E-09  2.799E-09  2.241E+07
+Output Field Frame Number  76, of  100, at step time 7.600E+01
+  1532647  7.700E+01 7.700E+01  00:00:49 5.000E-05           1  1.339E-09  3.865E-09  2.243E+07
+Output Field Frame Number  77, of  100, at step time 7.700E+01
+  1551377  7.800E+01 7.800E+01  00:00:50 5.000E-05           1  1.339E-09  3.635E-09  2.244E+07
+Output Field Frame Number  78, of  100, at step time 7.800E+01
+  1570107  7.900E+01 7.900E+01  00:00:51 5.000E-05           1  1.338E-09  2.580E-09  2.245E+07
+Output Field Frame Number  79, of  100, at step time 7.900E+01
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+  1588837  8.000E+01 8.000E+01  00:00:51 5.000E-05           1  1.338E-09  1.598E-09  2.247E+07
+Output Field Frame Number  80, of  100, at step time 8.000E+01
+  1607567  8.100E+01 8.100E+01  00:00:52 5.000E-05           1  1.337E-09  2.876E-09  2.248E+07
+Output Field Frame Number  81, of  100, at step time 8.100E+01
+  1626297  8.200E+01 8.200E+01  00:00:52 5.000E-05           1  1.337E-09  4.206E-09  2.249E+07
+Output Field Frame Number  82, of  100, at step time 8.200E+01
+  1645027  8.300E+01 8.300E+01  00:00:53 5.000E-05           1  1.336E-09  5.588E-09  2.251E+07
+Output Field Frame Number  83, of  100, at step time 8.300E+01
+  1663757  8.400E+01 8.400E+01  00:00:54 5.000E-05           1  1.336E-09  7.023E-09  2.252E+07
+Output Field Frame Number  84, of  100, at step time 8.400E+01
+  1682487  8.500E+01 8.500E+01  00:00:54 5.000E-05           1  1.335E-09  8.509E-09  2.254E+07
+Output Field Frame Number  85, of  100, at step time 8.500E+01
+  1701217  8.600E+01 8.600E+01  00:00:55 5.000E-05           1  1.335E-09  1.005E-08  2.255E+07
+Output Field Frame Number  86, of  100, at step time 8.600E+01
+  1719947  8.700E+01 8.700E+01  00:00:55 5.000E-05           1  1.334E-09  1.164E-08  2.256E+07
+Output Field Frame Number  87, of  100, at step time 8.700E+01
+  1738677  8.800E+01 8.800E+01  00:00:56 5.000E-05           1  1.334E-09  1.328E-08  2.258E+07
+Output Field Frame Number  88, of  100, at step time 8.800E+01
+  1757407  8.900E+01 8.900E+01  00:00:57 5.000E-05           1  1.333E-09  1.497E-08  2.259E+07
+Output Field Frame Number  89, of  100, at step time 8.900E+01
+  1776137  9.000E+01 9.000E+01  00:00:57 5.000E-05           1  1.333E-09  1.671E-08  2.261E+07
+Output Field Frame Number  90, of  100, at step time 9.000E+01
+  1794867  9.100E+01 9.100E+01  00:00:58 5.000E-05           1  1.333E-09  1.851E-08  2.262E+07
+Output Field Frame Number  91, of  100, at step time 9.100E+01
+  1813597  9.200E+01 9.200E+01  00:00:58 5.000E-05           1  1.332E-09  2.035E-08  2.263E+07
+Output Field Frame Number  92, of  100, at step time 9.200E+01
+  1832327  9.300E+01 9.300E+01  00:00:59 5.000E-05           1  1.332E-09  2.225E-08  2.265E+07
+Output Field Frame Number  93, of  100, at step time 9.300E+01
+  1851057  9.400E+01 9.400E+01  00:01:00 5.000E-05           1  1.331E-09  2.419E-08  2.266E+07
+Output Field Frame Number  94, of  100, at step time 9.400E+01
+  1869787  9.500E+01 9.500E+01  00:01:00 5.000E-05           1  1.331E-09  2.619E-08  2.268E+07
+Output Field Frame Number  95, of  100, at step time 9.500E+01
+  1888517  9.600E+01 9.600E+01  00:01:01 5.000E-05           1  1.331E-09  2.823E-08  2.269E+07
+Output Field Frame Number  96, of  100, at step time 9.600E+01
+  1907247  9.700E+01 9.700E+01  00:01:01 5.000E-05           1  1.330E-09  3.033E-08  2.270E+07
+Output Field Frame Number  97, of  100, at step time 9.700E+01
+  1925977  9.800E+01 9.800E+01  00:01:02 5.000E-05           1  1.330E-09  3.247E-08  2.272E+07
+Output Field Frame Number  98, of  100, at step time 9.800E+01
+  1944707  9.900E+01 9.900E+01  00:01:03 5.000E-05           1  1.329E-09  3.466E-08  2.273E+07
+Output Field Frame Number  99, of  100, at step time 9.900E+01
+  1963437  1.000E+02 1.000E+02  00:01:03 5.000E-05           1  1.329E-09  3.350E-08  2.275E+07
+Restart Number  1 at 100.00
+Output Field Frame Number 100, of  100, at step time 1.000E+02
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   61.690
+       SYSTEM TIME (SEC)    =  0.96000
+       WALLCLOCK TIME (SEC) =           63
+              INIT (SEC) =          0
+              MAIN (SEC) =         63
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

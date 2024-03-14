@@ -1,0 +1,197 @@
+Processing time = 0 second(s).
+CL: Attempting: 5 tokens of explicit
+CL: Attempting 5 tokens from 1761@license1.csc.fi
+CL: Number of licenses on 1761@license1.csc.fi: 600
+CL: Number of licenses in use on 1761@license1.csc.fi: 40
+CL: Test checkout: 5 "explicit" v62.3
+Analysis initiated from SIMULIA established products
+Abaqus JOB uniaxial_tension_vumat
+Abaqus 2023
+USING MEMORY DOUG-LEA ALLOCATOR
+DriverLM command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/eliT_DriverLM -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML -explicit -verbose -tmpdir /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894 -lmlog
+DriverLM status: 0
+Umbrella port: r07c04.bullx 37363
+                      Platform: lnx86_64
+             Source extensions: f for f90 F90 c C c\+\+ cpp
+              Object extension: o
+           Shared library name: libexplicitU-D.so
+  User subroutine archive file: libexplicitU-D_static.a
+   Utility shared library file: explicitB-D
+               Threads Library: ABQSMAAbuBasicUtils
+                   DMP Library: ABQMPI_api
+                 MPI Libraries: -lmpiCC
+              MPI Search Paths: -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/lib/linux_amd64
+             MPI Include Paths: -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include
+Begin Compiling Double Precision Abaqus/Explicit User Subroutines
+Wed 03 Jan 2024 08:15:53 PM EET
+Compiling code_binh.f90
+Current directory: /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894
+File to compile: /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894/code_binh.f90
+>>> ifort -V -c -fpp -fPIC -extend-source -DABQ_LNX86_64 -DABQ_FORTRAN -auto -pc64 -align array64byte -prec-div -prec-sqrt -fp-model precise -fimf-arch-consistency=true -mP2OPT_hpo_vec_divbyzero=F -no-fma -fp-speculation=safe -fprotect-parens -fstack-protector-strong -reentrancy threaded -msse3 -axcore-avx2,avx -WB -I. -DDPX -I/appl/soft/eng/simulia/EstProducts/2023 -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/include -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/../SMAUsubs/PublicInterfaces -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include -I/scratch/project_2004956/test_VUMAT_ML -I/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel/include/fortran-tf -I. -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/include -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/../SMAUsubs/PublicInterfaces -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include code_binh.f90
+ Intel(R) Fortran 2021.6.0-1299
+End Compiling Double Precision Abaqus/Explicit User Subroutines
+Begin Linking Double Precision Abaqus/Explicit User Subroutines
+export.sym: ['-Wl,-u,vcosimulation_']
+export.sym: ['-Wl,-u,vcosimulation0_']
+export.sym: ['-Wl,-u,vdflux_']
+export.sym: ['-Wl,-u,vdisp_']
+export.sym: ['-Wl,-u,vdload_']
+export.sym: ['-Wl,-u,vexternaldb_']
+export.sym: ['-Wl,-u,vfabric_']
+export.sym: ['-Wl,-u,vfric_']
+export.sym: ['-Wl,-u,vfric_coef_']
+export.sym: ['-Wl,-u,vfriction_']
+export.sym: ['-Wl,-u,vhetval_']
+export.sym: ['-Wl,-u,vsdvini_']
+export.sym: ['-Wl,-u,vuamp_']
+export.sym: ['-Wl,-u,vuanisohyper_inv_']
+export.sym: ['-Wl,-u,vuanisohyper_strain_']
+export.sym: ['-Wl,-u,vucharlength_']
+export.sym: ['-Wl,-u,vucreepnetwork_']
+export.sym: ['-Wl,-u,vuel_']
+export.sym: ['-Wl,-u,vueos_']
+export.sym: ['-Wl,-u,vueulgenprop_']
+export.sym: ['-Wl,-u,vuexpan_']
+export.sym: ['-Wl,-u,vufield_']
+export.sym: ['-Wl,-u,vufluidexch_']
+export.sym: ['-Wl,-u,vufluidexcheffarea_']
+export.sym: ['-Wl,-u,vugens_']
+export.sym: ['-Wl,-u,vuhard_']
+export.sym: ['-Wl,-u,vuinflprop_']
+export.sym: ['-Wl,-u,vuinter_']
+export.sym: ['-Wl,-u,vuinter_cza_']
+export.sym: ['-Wl,-u,vuinteraction_']
+export.sym: ['-Wl,-u,vumat_']
+export.sym: ['-Wl,-u,vumatht_']
+export.sym: ['-Wl,-u,vumullins_']
+export.sym: ['-Wl,-u,vuporepress_']
+export.sym: ['-Wl,-u,vusdfld_']
+export.sym: ['-Wl,-u,vusdfld_cza_']
+export.sym: ['-Wl,-u,vusuperelashardmod_']
+export.sym: ['-Wl,-u,vusuperelasplastmod_']
+export.sym: ['-Wl,-u,vutrs_']
+export.sym: ['-Wl,-u,vutrsnetwork_']
+export.sym: ['-Wl,-u,vuviscosity_']
+export.sym: ['-Wl,-u,vwave_']
+export.sym: ['-Wl,-u,_Z19SMAUXpU_XP_finalizeRi']
+export.sym: ['-Wl,-u,_Z21SMAUXpU_XP_initializeRi']
+export.sym: ['-Wl,-u,_Z23SMAUXpUsubs_XP_finalizeRi']
+export.sym: ['-Wl,-u,_Z25SMAUXpUsubs_XP_initializeRi']
+export.sym: ['-Wl,-u,_Z32SMAUXpUsubs_XP_specific_finalizeRi']
+export.sym: ['-Wl,-u,_Z34SMAUXpUsubs_XP_specific_initializeRi']
+export.sym: ['-Wl,-u,xplu_callallutils_']
+Linking code_binh.o into user subroutine shared library libexplicitU-D.so
+>>> ifort -V -cxxlib -fPIC -threads -shared -Wl,--add-needed -Wl,-u,vcosimulation_ -Wl,-u,vcosimulation0_ -Wl,-u,vdflux_ -Wl,-u,vdisp_ -Wl,-u,vdload_ -Wl,-u,vexternaldb_ -Wl,-u,vfabric_ -Wl,-u,vfric_ -Wl,-u,vfric_coef_ -Wl,-u,vfriction_ -Wl,-u,vhetval_ -Wl,-u,vsdvini_ -Wl,-u,vuamp_ -Wl,-u,vuanisohyper_inv_ -Wl,-u,vuanisohyper_strain_ -Wl,-u,vucharlength_ -Wl,-u,vucreepnetwork_ -Wl,-u,vuel_ -Wl,-u,vueos_ -Wl,-u,vueulgenprop_ -Wl,-u,vuexpan_ -Wl,-u,vufield_ -Wl,-u,vufluidexch_ -Wl,-u,vufluidexcheffarea_ -Wl,-u,vugens_ -Wl,-u,vuhard_ -Wl,-u,vuinflprop_ -Wl,-u,vuinter_ -Wl,-u,vuinter_cza_ -Wl,-u,vuinteraction_ -Wl,-u,vumat_ -Wl,-u,vumatht_ -Wl,-u,vumullins_ -Wl,-u,vuporepress_ -Wl,-u,vusdfld_ -Wl,-u,vusdfld_cza_ -Wl,-u,vusuperelashardmod_ -Wl,-u,vusuperelasplastmod_ -Wl,-u,vutrs_ -Wl,-u,vutrsnetwork_ -Wl,-u,vuviscosity_ -Wl,-u,vwave_ -Wl,-u,_Z19SMAUXpU_XP_finalizeRi -Wl,-u,_Z21SMAUXpU_XP_initializeRi -Wl,-u,_Z23SMAUXpUsubs_XP_finalizeRi -Wl,-u,_Z25SMAUXpUsubs_XP_initializeRi -Wl,-u,_Z32SMAUXpUsubs_XP_specific_finalizeRi -Wl,-u,_Z34SMAUXpUsubs_XP_specific_initializeRi -Wl,-u,xplu_callallutils_ -Wl,-soname,libexplicitU-D.so -L/scratch/project_2004956/test_VUMAT_ML -L/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow/lib -L/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel/lib64 -lfortran-tf /scratch/project_2004956/test_VUMAT_ML/ml_module.o -lml_module -o libexplicitU-D.so code_binh.o /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/lib/libexplicitU-D_static.a -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin -lABQSMAShaShared-D -lABQSMAAncAdbModule -lABQSMAAspSupport -lABQSMAUsubsLib -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/lib/linux_amd64 -lABQDMP_Core -lABQMPI_api -lmpiCC -lABQSMAAbuBasicUtils -lexplicitB-D -lABQSMABasCoreUtils -lABQSMAEliLicenseModule -parallel -Wl,-Bdynamic -shared-intel
+GNU ld (GNU Binutils) 2.38
+End Linking Double Precision Abaqus/Explicit User Subroutines
+Wed 03 Jan 2024 08:16:16 PM EET
+Begin Analysis Input File Processor
+Wed 03 Jan 2024 08:16:16 PM EET
+Run pre
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/pre -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML -outdir /scratch/project_2004956/test_VUMAT_ML -tmpdir /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894 -inputFormat inp -resultsFormat odb -output_precision FULL -memory 64 -memory_parameter AUTOMATIC -sim /scratch/project_2004956/test_VUMAT_ML/uniaxial_tension_vumat.sim -simwrk /scratch/project_2004956/test_VUMAT_ML/uniaxial_tension_vumat -input uniaxial_tension_vumat -mp_mode THREADS -odb_output_requested -convert_sdi -umbrella_host r07c04.bullx -umbrella_port 37363 -dmp_solver -std_parallel -timeout 36000 -auto_calc_analysis 
+Wed 03 Jan 2024 08:18:52 PM EET
+Phase Analysis Input File Processor status 0
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+Wed 03 Jan 2024 08:18:52 PM EET
+PAC_NUM_THREADS VALUE: 1
+Run package_dp
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/package_dp -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML -outdir /scratch/project_2004956/test_VUMAT_ML -tmpdir /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894 -inputFormat inp -resultsFormat odb -simwrk /scratch/project_2004956/test_VUMAT_ML/uniaxial_tension_vumat -memory 64 -memory_parameter AUTOMATIC -mp_mode THREADS -lmsuspend -umbrella_host r07c04.bullx -umbrella_port 37363 -interactive 
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+ input array initialized OK
+
+The double precision Abaqus/Package executable will be used in this analysis.
+
+Abaqus/Explicit 2023                             DATE 03-Jan-2024  TIME 20:19:39
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 3 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+  USER SUBROUTINE VUMAT
+-------------------------------------------------------------------------------
+
+
+***WARNING: A material defined in user subroutine VUMAT must be defined as
+            purely elastic (using the initial elastic modulus) at the
+            beginning of the analysis (stepTime=0). This is an informative
+            message. It does not necessarily indicate that user subroutine
+            VUMAT is incorrectly defined.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass (unscaled) in model = 7.85000E-09
+   Center of mass of model (based on unscaled mass) = ( 5.000000E-01, 5.000000E-01, 5.000000E-01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          3.925000E-09                  7.850000E-09
+      I(YY)          3.925000E-09                  7.850000E-09
+      I(ZZ)          3.925000E-09                  7.850000E-09
+      I(XY)          0.000000E+00                 -1.962500E-09
+      I(YZ)          4.135903E-25                 -1.962500E-09
+      I(ZX)          0.000000E+00                 -1.962500E-09
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state. The stable time increment estimates
+  do not account for mass scaling.
+
+
+   Initial time increment = 1.08460E-07
+
+   Statistics for all elements:
+      Mean = 1.08460E-07
+      Standard deviation = 0.0000
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           1          1       1.084599E-07      1.000000E+00
+
+Wed 03 Jan 2024 08:20:55 PM EET
+Phase Abaqus/Explicit Packager status 0
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+Wed 03 Jan 2024 08:20:55 PM EET
+Run explicit_dp
+  Command: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/explicit_dp -explicit -messaging_mechanism DIRECT -job uniaxial_tension_vumat -indir /scratch/project_2004956/test_VUMAT_ML -outdir /scratch/project_2004956/test_VUMAT_ML -tmpdir /tmp/nguyenb5/19926870/nguyenb5_uniaxial_tension_vumat_624894 -inputFormat inp -resultsFormat odb -simwrk /scratch/project_2004956/test_VUMAT_ML/uniaxial_tension_vumat -output_precision FULL -mp_mode THREADS -lmsuspend -umbrella_port 37363 -umbrella_host r07c04.bullx -parallel_odb single -parallel_restartfile single -interactive -timeout 3600 
+
+Abaqus/Explicit 2023                             DATE 03-Jan-2024  TIME 20:21:21
+
+The double precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 363.0 kilobytes.
+  Element by element stable time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL    PERCENT
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY  CHNG MASS
+        0  0.000E+00 0.000E+00  00:00:02 5.000E-05           1  9.384E-10  9.384E-10  2.125E+07
+Output Field Frame Number    1, of  101 requested time points, at increment zero
+       31  1.550E-03 1.550E-03  00:03:27 5.000E-05           1  1.476E-09  9.477E-10  2.125E+07
+       61  3.050E-03 3.050E-03  00:07:37 5.000E-05           1  1.460E-09  9.385E-10  2.125E+07

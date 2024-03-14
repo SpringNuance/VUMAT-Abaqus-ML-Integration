@@ -1,0 +1,28 @@
+
+Lmod is automatically replacing "gcc/11.3.0" with
+"intel-oneapi-compilers/2022.1.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) intel-oneapi-mkl/2022.1.0     2) openmpi/4.1.4
+
+ 
+Abaqus 2023  is now in use 
+ 
+NOTICE.  Abaqus licenses used on CSC's servers are only for 
+students and personnel from Finnish universities and polytechnics. 
+ 
+Checkout succeeded: explicit/6FB273EE1EBC
+	License file: 1761@license1.csc.fi
+	License Server: 1761@license1.csc.fi
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens from Flexnet server license1.csc.fi.
+<215 out of 600 licenses remain available>.
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0 Build 20220226_000000
+Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+
+ifort: command line warning #10434: option '-extend_source' use with underscore is deprecated; use '-extend-source' instead
+code_binh.for(1): remark #15009: vumat_ has been targeted for automatic cpu dispatch
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0 Build 20220226_000000
+Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+

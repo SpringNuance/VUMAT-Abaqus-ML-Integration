@@ -1,0 +1,22 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB uniaxial_tension_vumat
+Abaqus 2020
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens from Flexnet server Jalaj.
+<1019 out of 1024 licenses remain available>.
+Begin Analysis Input File Processor
+8/1/2021 2:45:39 PM
+Run pre.exe
+8/1/2021 2:45:42 PM
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+8/1/2021 2:45:42 PM
+Run package_dp.exe
+8/1/2021 2:45:44 PM
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+8/1/2021 2:45:44 PM
+Run explicit_dp.exe
+8/1/2021 2:46:45 PM
+End Abaqus/Explicit Analysis
+Abaqus JOB uniaxial_tension_vumat COMPLETED

@@ -1,0 +1,45 @@
+Change Dir: /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile VerifyFortranC && /usr/bin/cmake -S/usr/share/cmake/Modules/FortranCInterface/Verify -B/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 VerifyFortranC
+gmake[1]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+/usr/bin/cmake -S/usr/share/cmake/Modules/FortranCInterface/Verify -B/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC/CMakeFiles 5
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/VerifyFortranC.dir/all
+gmake[2]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortran.dir/build.make CMakeFiles/VerifyFortran.dir/depend
+gmake[3]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+cd /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/share/cmake/Modules/FortranCInterface/Verify /usr/share/cmake/Modules/FortranCInterface/Verify /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC/CMakeFiles/VerifyFortran.dir/DependInfo.cmake
+Scanning dependencies of target VerifyFortran
+gmake[3]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortran.dir/build.make CMakeFiles/VerifyFortran.dir/build
+gmake[3]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+[ 20%] Building Fortran object CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gfortran  -I/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC -O3 -DNDEBUG -O3 -c /usr/share/cmake/Modules/FortranCInterface/Verify/VerifyFortran.f -o CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+[ 40%] Linking Fortran static library libVerifyFortran.a
+/usr/bin/cmake -P CMakeFiles/VerifyFortran.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortran.dir/link.txt --verbose=1
+/usr/bin/ar qc libVerifyFortran.a CMakeFiles/VerifyFortran.dir/VerifyFortran.f.o
+/usr/bin/ranlib libVerifyFortran.a
+gmake[3]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+[ 40%] Built target VerifyFortran
+/usr/bin/gmake  -f CMakeFiles/VerifyFortranC.dir/build.make CMakeFiles/VerifyFortranC.dir/depend
+gmake[3]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+cd /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/share/cmake/Modules/FortranCInterface/Verify /usr/share/cmake/Modules/FortranCInterface/Verify /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC/CMakeFiles/VerifyFortranC.dir/DependInfo.cmake
+Scanning dependencies of target VerifyFortranC
+gmake[3]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+/usr/bin/gmake  -f CMakeFiles/VerifyFortranC.dir/build.make CMakeFiles/VerifyFortranC.dir/build
+gmake[3]: Entering directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+[ 60%] Building C object CMakeFiles/VerifyFortranC.dir/main.c.o
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gcc  -I/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/main.c.o -c /usr/share/cmake/Modules/FortranCInterface/Verify/main.c
+[ 80%] Building C object CMakeFiles/VerifyFortranC.dir/VerifyC.c.o
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gcc  -I/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -c /usr/share/cmake/Modules/FortranCInterface/Verify/VerifyC.c
+[100%] Linking C executable VerifyFortranC
+/usr/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortranC.dir/link.txt --verbose=1
+/appl/spack/v018/install-tree/gcc-8.5.0/gcc-11.3.0-i44hho/bin/gcc -O3 -DNDEBUG CMakeFiles/VerifyFortranC.dir/main.c.o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -o VerifyFortranC  libVerifyFortran.a -lgfortran -lm -lquadmath -lm 
+gmake[3]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+[100%] Built target VerifyFortranC
+gmake[2]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+/usr/bin/cmake -E cmake_progress_start /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC/CMakeFiles 0
+gmake[1]: Leaving directory '/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/build_intel/CMakeFiles/FortranCInterface/VerifyC'
+

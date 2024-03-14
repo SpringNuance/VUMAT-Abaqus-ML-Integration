@@ -1,0 +1,34 @@
+Compiling
+
+ifort -V -c -fpp -fPIC -extend_source -DABQ_LNX86_64 -DABQ_FORTRAN -auto -pc64 -align array64byte 
+      -prec-div -prec-sqrt -fp-model precise -fimf-arch-consistency=true -mP2OPT_hpo_vec_divbyzero=F -no-fma 
+      -fp-speculation=safe -fprotect-parens -fstack-protector-strong -reentrancy threaded -msse3 -axcore-avx2,avx -WB 
+      -I. \
+      -I/scratch/project_2004956/test_VUMAT_ML -I/appl/soft/eng/simulia/EstProducts/2023 \
+      -DDPX \
+      -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/include \
+      -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/../SMAUsubs/PublicInterfaces \ 
+      -I/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/include \ 
+       subroutine.f90
+
+Linking
+
+Linking subroutine.o into user subroutine shared library libexplicitU-D.so
+
+ifort -V -cxxlib -fPIC -threads -shared -Wl,--add-needed -Wl,-u,vcosimulation_ -Wl,-u,vcosimulation0_ 
+      -Wl,-u,vdflux_ -Wl,-u,vdisp_ -Wl,-u,vdload_ -Wl,-u,vexternaldb_ -Wl,-u,vfabric_ -Wl,-u,vfric_ 
+      -Wl,-u,vfric_coef_ -Wl,-u,vfriction_ -Wl,-u,vhetval_ -Wl,-u,vsdvini_ -Wl,-u,vuamp_ -Wl,-u,vuanisohyper_inv_ 
+      -Wl,-u,vuanisohyper_strain_ -Wl,-u,vucharlength_ -Wl,-u,vucreepnetwork_ -Wl,-u,vuel_ -Wl,-u,vueos_ 
+      -Wl,-u,vueulgenprop_ -Wl,-u,vuexpan_ -Wl,-u,vufield_ -Wl,-u,vufluidexch_ -Wl,-u,vufluidexcheffarea_ 
+      -Wl,-u,vugens_ -Wl,-u,vuhard_ -Wl,-u,vuinflprop_ -Wl,-u,vuinter_ -Wl,-u,vuinter_cza_ -Wl,-u,vuinteraction_ 
+      -Wl,-u,vumat_ -Wl,-u,vumatht_ -Wl,-u,vumullins_ -Wl,-u,vuporepress_ -Wl,-u,vusdfld_ -Wl,-u,vusdfld_cza_ 
+      -Wl,-u,vusuperelashardmod_ -Wl,-u,vusuperelasplastmod_ -Wl,-u,vutrs_ -Wl,-u,vutrsnetwork_ -Wl,-u,vuviscosity_ 
+      -Wl,-u,vwave_ -Wl,-u,_Z19SMAUXpU_XP_finalizeRi -Wl,-u,_Z21SMAUXpU_XP_initializeRi -Wl,-u,_Z23SMAUXpUsubs_XP_finalizeRi 
+      -Wl,-u,_Z25SMAUXpUsubs_XP_initializeRi -Wl,-u,_Z32SMAUXpUsubs_XP_specific_finalizeRi -Wl,-u,_Z34SMAUXpUsubs_XP_specific_initializeRi 
+      -Wl,-u,xplu_callallutils_ -Wl,-soname,libexplicitU-D.so -o libexplicitU-D.so subroutine.o 
+      /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/lib/libexplicitU-D_static.a 
+      -L /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin 
+      -lABQSMAShaShared-D -lABQSMAAncAdbModule -lABQSMAAspSupport -lABQSMAUsubsLib 
+      -L/appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/bin/SMAExternal/pmpi/lib/linux_amd64 
+      -lABQDMP_Core -lABQMPI_api -lmpiCC -lABQSMAAbuBasicUtils -lexplicitB-D -lABQSMABasCoreUtils -lABQSMAEliLicenseModule 
+      -parallel -Wl,-Bdynamic -shared-intel

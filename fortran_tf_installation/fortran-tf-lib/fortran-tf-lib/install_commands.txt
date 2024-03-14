@@ -1,0 +1,62 @@
+Fotran TF library github
+https://github.com/Cambridge-ICCS/fortran-tf-lib
+
+Install Tensorflow for C API
+https://www.tensorflow.org/install/lang_c
+
+cd /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/
+
+mkdir tensorflow
+cd tensorflow
+
+FILENAME=libtensorflow-cpu-linux-x86_64-2.15.0.tar.gz
+wget -q --no-check-certificate https://storage.googleapis.com/tensorflow/libtensorflow/${FILENAME}
+
+tar -xzf ${FILENAME}
+
+You create the hello_tf.c file like tutorial and run these to test them
+
+module load gcc
+gcc hello_tf.c -I./include -L./lib -ltensorflow -o hello_tf
+export LD_LIBRARY_PATH=/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow/lib:$LD_LIBRARY_PATH
+./hello_tf
+
+
+
+For intel compiler
+
+Now we are back to the main installation folder of fortran-tf-lib
+cd /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib
+
+module purge
+mkdir build_intel
+cd build_intel
+module load intel-oneapi-compilers-classic
+cmake .. -DCMAKE_BUILD_TYPE=Release \
+         -DCMAKE_Fortran_COMPILER=ifort \
+         -DCMAKE_C_COMPILER=icc \
+         -DTENSORFLOW_LOCATION=/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow \
+         -DCMAKE_INSTALL_PREFIX=/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel
+make
+make install
+
+
+
+
+For gnu compiler
+
+Now we are back to the main installation folder of fortran-tf-lib
+cd /projappl/project_2004956/fortran-tf-lib/fortran-tf-lib
+
+
+module purge
+mkdir build_gnu
+cd build_gnu
+module load gcc
+cmake .. -DCMAKE_BUILD_TYPE=Release \
+         -DCMAKE_Fortran_COMPILER=gfortran \
+         -DCMAKE_C_COMPILER=gcc \
+         -DTENSORFLOW_LOCATION=/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tensorflow \
+         -DCMAKE_INSTALL_PREFIX=/projappl/project_2004956/fortran-tf-lib/fortran-tf-lib/tf_intel
+make
+make install

@@ -1,0 +1,1 @@
+abaqus job=simple_shear

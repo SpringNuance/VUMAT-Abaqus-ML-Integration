@@ -1,0 +1,22 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB simple_shear
+Abaqus 2020
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens from Flexnet server Jalaj.
+<1019 out of 1024 licenses remain available>.
+Begin Analysis Input File Processor
+8/1/2021 8:57:54 PM
+Run pre.exe
+8/1/2021 8:57:58 PM
+End Analysis Input File Processor
+Begin Abaqus/Explicit Packager
+8/1/2021 8:57:58 PM
+Run package.exe
+8/1/2021 8:58:01 PM
+End Abaqus/Explicit Packager
+Begin Abaqus/Explicit Analysis
+8/1/2021 8:58:01 PM
+Run explicit.exe
+8/1/2021 9:04:02 PM
+End Abaqus/Explicit Analysis
+Abaqus JOB simple_shear COMPLETED

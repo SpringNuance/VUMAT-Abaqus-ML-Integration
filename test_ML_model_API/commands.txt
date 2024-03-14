@@ -1,0 +1,70 @@
+Install Flask: Flask is a lightweight Python web framework that's perfect 
+for setting up a simple API. You can install it using pip:
+
+pip install Flask
+
+The Python file app.py uses Flask to create a web server. 
+This server will load your model and expose an endpoint for making predictions.
+
+Start the Server: Run the Flask application by executing the script.
+python test_ML_model_API/app_flask.py
+
+Test the API: You can test the API using tools like Postman or 
+by sending a request using curl or a Python script. 
+
+You can test by running
+python test_ML_model_API/requests_test.py
+
+Please look at load_LSTM.ipynb to see the input, output, serialization and architecture of the model.
+
+### Input
+(1) strain (initial value: 2e-08)
+(2) strain rate (initial value: 0.1)
+(3) initial temperature (K) (initial value: -293 K)
+
+The shape of input: np.array(time step, [strain, strain rate, initial T]), such as (17504, 3)
+
+for each time step, we would have a different values for strain, strain rate and initial temperature. 
+
+### Output
+(1) stress (MPa) 
+(2) delta temperature (K) = evolved temperature - initial temperature
+
+The shape of output: np.array(time step, [stress, delta T]), such as (17504, 2)
+
+
+Input to the model is np.log10(strain) and np.log10(strain rate), but not temperature
+Normalized to [0, 1]: do the same for strain, strain rate, temperature
+
+Stress and evolved temperature are not put into log.
+Process the output
+
+Descale stress and evolved temp using inverse function of the input
+
+We must have the upper and lower end for each variable.
+
+
+
+# apply scaling
+flows_scaled = {}
+stress_range = np.array([40, 570])
+temp_range = np.array([290, 700])
+#log_temp_range = [np.log10(290), np.log10(700)]
+log_strain_range = [np.log10(0.25), np.log10(1e-9)] # valid only if strain < 1.0
+log_rate_range = [np.log10(0.1), np.log10(0.0001)] # valid only if rate < 1.0
+delT_range = np.array([0, 12.2])
+
+def manual_scaling(feat, range_value):
+    return (feat - range_value[0])/range_value[1]
+def manual_descaling(feat, range_value): # inverse of the function above
+    return feat * range_value[1] + range_value[0]
+
+for key, fc in flows_log.items():
+    fc['Stress'] = manual_scaling(fc['Stress'], stress_range)
+    fc['Temp'] = manual_scaling(fc['Temp'], temp_range)
+    fc['I_Temp'] = manual_scaling(fc['I_Temp'], temp_range)
+    fc['log_strain'] = manual_scaling(fc['log_strain'], log_strain_range)
+    fc['log_rate'] = manual_scaling(fc['log_rate'], log_rate_range)
+    fc['delT'] = manual_scaling(fc['delT'], delT_range)
+    flows_scaled[key] = fc
+flows_scaled['373K'].head()

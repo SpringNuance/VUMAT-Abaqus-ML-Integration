@@ -1,0 +1,47 @@
+
+Lmod is automatically replacing "gcc/11.3.0" with
+"intel-oneapi-compilers-classic/2021.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) intel-oneapi-mkl/2022.1.0     2) openmpi/4.1.4
+
+ 
+Abaqus 2023  is now in use 
+ 
+NOTICE.  Abaqus licenses used on CSC's servers are only for 
+students and personnel from Finnish universities and polytechnics. 
+ 
+
+Lmod is automatically replacing "intel-oneapi-compilers-classic/2021.6.0" with
+"intel-oneapi-compilers/2022.1.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) intel-oneapi-mkl/2022.1.0     2) openmpi/4.1.4
+
+rm: cannot remove '*.lck': No such file or directory
+Checkout succeeded: explicit/6FB273EE1EBC
+	License file: 1761@license1.csc.fi
+	License Server: 1761@license1.csc.fi
+Abaqus License Manager checked out the following licenses:
+Abaqus/Explicit checked out 5 tokens from Flexnet server license1.csc.fi.
+<568 out of 600 licenses remain available>.
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0 Build 20220226_000000
+Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+
+code_binh.f90(67): remark #15009: vumat_ has been targeted for automatic cpu dispatch
+Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0 Build 20220226_000000
+Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+
+/appl/spack/v018/install-tree/gcc-8.5.0/binutils-2.38-5o2cqc/bin/ld: /appl/soft/eng/simulia/EstProducts/2023/linux_a64/code/lib/libexplicitU-D_static.a(vusuperelasplastmod.o): warning: relocation in read-only section `.trace'
+/appl/spack/v018/install-tree/gcc-8.5.0/binutils-2.38-5o2cqc/bin/ld: warning: creating DT_TEXTREL in a shared object
+2024-01-08 21:38:15.774569: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /scratch/project_2004956/test_VUMAT_ML/LSTM
+2024-01-08 21:38:15.836983: I tensorflow/cc/saved_model/reader.cc:51] Reading meta graph with tags { serve }
+2024-01-08 21:38:15.837039: I tensorflow/cc/saved_model/reader.cc:146] Reading SavedModel debug info (if present) from: /scratch/project_2004956/test_VUMAT_ML/LSTM
+2024-01-08 21:38:15.837299: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-01-08 21:38:15.896180: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-01-08 21:38:15.908658: I tensorflow/cc/saved_model/loader.cc:233] Restoring SavedModel bundle.
+2024-01-08 21:38:16.577908: I tensorflow/cc/saved_model/loader.cc:217] Running initialization op on SavedModel bundle at path: /scratch/project_2004956/test_VUMAT_ML/LSTM
+2024-01-08 21:38:16.661656: I tensorflow/cc/saved_model/loader.cc:316] SavedModel load for tags { serve }; Status: success: OK. Took 897195 microseconds.
